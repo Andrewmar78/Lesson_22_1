@@ -31,15 +31,20 @@ class Planet:
 
 
 class Person:
-    def __init__(self):
-        self.planet = Planet()
+    def __init__(self, city_population, person_room):
+        self.city_population = city_population
+        self.person_room = person_room
 
     def get_person_room(self):
-        return self.planet.get_contry().get_city().get_street().get_room().get_name()
+        return self.person_room
 
     def get_city_population(self):
-        return self.planet.get_contry().get_city().population()
+        return self.city_population
 
+
+archer = Person(30000, 15)
+print("Population:", archer.get_city_population())
+print("Room №", archer.get_person_room())
 
 # TODO после выполнения задания попробуйте
 # сделать экземпляр класса person и вызвать новые методы.

@@ -21,7 +21,7 @@ class FuncTestCase(SkyproTestCase):
             "%@Проверьте что в классе SomeClass создан метод sorted_func"
         )
 
-        some_inst = main.SomeClass()
+        some_inst = main
         self.assertTrue(
             some_inst.sorted_func() == [1, 1, 2, 2, 3, 4],
             "%@Проверьте, что Ваш метод объединяет в себе все возможности представленных методов"
