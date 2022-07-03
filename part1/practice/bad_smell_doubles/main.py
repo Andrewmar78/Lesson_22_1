@@ -10,9 +10,8 @@ class SomeClass:
         self.lst = [3, 2, 1, 4, 2, 1]
 
     def sorted_func(self):
-        # Не работает метод sort
-        return self.lst.sort(reverse=False)
-        # return sorted(self.lst, reverse=False)
+        self.lst.sort(reverse=False)
+        return self.lst
 
 if __name__ == "__main__":
     some_item = SomeClass()
